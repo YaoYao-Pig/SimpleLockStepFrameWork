@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jtk5YCeUikI=",
+  "success": true,
+  "projectFilePath": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\ServerStudy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yyz\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

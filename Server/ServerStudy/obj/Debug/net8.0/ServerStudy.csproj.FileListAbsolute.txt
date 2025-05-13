@@ -1,0 +1,17 @@
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\ServerStudy.exe
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\ServerStudy.deps.json
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\ServerStudy.runtimeconfig.json
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\ServerStudy.dll
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\ServerStudy.pdb
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.AssemblyInfoInputs.cache
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.AssemblyInfo.cs
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.csproj.CoreCompileInputs.cache
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.dll
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\refint\ServerStudy.dll
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.pdb
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.genruntimeconfig.cache
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ref\ServerStudy.dll
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerStudy.csproj.AssemblyReference.cache
+D:\Program\Unity\LockStepStudy\Server\ServerStudy\obj\Debug\net8.0\ServerSt.6B3B2361.Up2Date
