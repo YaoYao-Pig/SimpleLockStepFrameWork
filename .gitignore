@@ -3,6 +3,7 @@ Build/
 ./.idea/
 LockStepClient/Library/
 LockStepClient/Temp/
+LockStepClient/Logs/
 Server/ServerStudy/
 *.pdb
 *.dll

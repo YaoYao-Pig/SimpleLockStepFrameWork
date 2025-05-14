@@ -368,8 +368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 746ec364cd5b31640b5c486843381a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sendIntervalSeconds: 0.1
+  playerGuid: 0
   inputMono: {fileID: 801358742}
-  playerList:
+  playerPrefabList:
   - {fileID: 7127470838835487289, guid: 760d56c6dbf283545a74c79649b83b12, type: 3}
   enemyList:
   - {fileID: 8486536486234664006, guid: 6d08a5fbe07c246429fbc56e1f1ada9c, type: 3}
@@ -385,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7760b6011a76a4e41aae659f900504e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMoveControllerList: []
 --- !u!114 &801358741
 MonoBehaviour:
   m_ObjectHideFlags: 0

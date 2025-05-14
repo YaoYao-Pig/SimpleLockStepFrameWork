@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManagerBase : MonoBehaviour
 {
-    public void DoUpdate(float deltaTime)
+    public virtual void DoUpdate(float deltaTime)
     {
         
     }

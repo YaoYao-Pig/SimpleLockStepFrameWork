@@ -6,7 +6,8 @@ using UnityEngine;
 public class MoveController : MonoBehaviour,IController
 {
     private Rigidbody _rigidbody;
-    
+
+    public int id;
 
     public void Awake()
     {
@@ -15,9 +16,10 @@ public class MoveController : MonoBehaviour,IController
 
     public void DoUpdate(float deltaTime)
     {
-        if (GameManager.Instance.playerInputDict.TryGetValue(GameManager.Instance.playerGuid,out var input))
+        if (GameManager.Instance.playerInputDict.TryGetValue(id,out var input))
         {
-            _rigidbody.AddForce(new Vector3(input.inputUV.x, 0, input.inputUV.y) * 10);
+            transform.position = new Vector3(transform.position.x +input.inputUV.x, transform.position.y+input.inputUV.y, transform.position.z);
+            
         }
     }
 }

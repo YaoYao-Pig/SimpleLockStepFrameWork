@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerManager : ManagerBase
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+
+    public List<MoveController> playerMoveControllerList; 
 
     // Update is called once per frame
-    void Update()
+    public override void DoUpdate(float deltaTime)
     {
-        
+        if (playerMoveControllerList != null)
+        {
+            foreach (var player in playerMoveControllerList)
+            {
+                player.DoUpdate(deltaTime);
+            }
+        }
     }
 }

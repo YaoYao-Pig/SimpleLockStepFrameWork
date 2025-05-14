@@ -175,24 +175,22 @@ public class SimplePollingClient
                 if (message != null)
                 {
                     // 尝试将消息反序列化为 GameStateSnapshot_Client
-                    try
-                    {
                         GameStateSnapshot_Client gameState = JsonUtility.FromJson<GameStateSnapshot_Client>(message);
                         if (gameState != null && gameState.AllPlayerInputs != null)
                         {
-                            
+                            foreach(var p in gameState.AllPlayerInputs)
+                            {
+                                // Debug.Log("----------------");
+                                // Debug.Log(p.id);
+                                // Debug.Log(p.inputUV.x.ToString()+" "+p.inputUV.y.ToString());
+                                // Debug.Log("----------------");
+                                var pi = new PlayerInput();
+                                pi.inputUV = new Vector2(p.inputUV.x, p.inputUV.y);
+                                pi.isJump = p.isJump;
+                                pi.id = p.id;
+                                GameManager.Instance.playerInputDict[p.id] = pi;
+                            }
                         }
-                        else
-                        {
-                        }
-                    }
-                    catch (ArgumentException argEx) // JsonUtility.FromJson 在JSON格式错误时可能抛出ArgumentException
-                    {
-                         
-                    }
-                    catch (Exception ex) // 其他反序列化时可能发生的错误
-                    {
-                    }
                 }
                 else // message is null
                 {
