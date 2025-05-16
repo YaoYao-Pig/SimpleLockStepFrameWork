@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\jsonextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:jsonextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\serverlauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:serverlauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\testserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:testserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|d:\\program\\unity\\lockstepstudy\\server\\serverstudy\\math\\basetype\\lfloat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{981DF4C6-BC5F-442E-8423-4078DE483B87}|ServerStudy.csproj|solutionrelative:math\\basetype\\lfloat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServerManager.cs",
-              "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\ServerManager.cs",
-              "RelativeDocumentMoniker": "ServerManager.cs",
-              "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\ServerManager.cs",
-              "RelativeToolTip": "ServerManager.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "JsonExtractor.cs",
+              "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\JsonExtractor.cs",
+              "RelativeDocumentMoniker": "JsonExtractor.cs",
+              "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\JsonExtractor.cs",
+              "RelativeToolTip": "JsonExtractor.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBwAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:36:12.275Z",
+              "WhenOpened": "2025-05-16T12:55:29.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TestServer.cs",
-              "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\TestServer.cs",
-              "RelativeDocumentMoniker": "TestServer.cs",
-              "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\TestServer.cs",
-              "RelativeToolTip": "TestServer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAsAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LFloat.cs",
+              "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\Math\\BaseType\\LFloat.cs",
+              "RelativeDocumentMoniker": "Math\\BaseType\\LFloat.cs",
+              "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\Math\\BaseType\\LFloat.cs",
+              "RelativeToolTip": "Math\\BaseType\\LFloat.cs",
+              "ViewState": "AgIAAEoBAAAAAAAAAAAAAFYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:44:42.568Z",
+              "WhenOpened": "2025-05-16T12:39:03.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServerLauncher.cs",
-              "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\ServerLauncher.cs",
-              "RelativeDocumentMoniker": "ServerLauncher.cs",
-              "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\ServerLauncher.cs",
-              "RelativeToolTip": "ServerLauncher.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:31:42.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Server.cs",
               "DocumentMoniker": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\Server.cs",
               "RelativeDocumentMoniker": "Server.cs",
               "ToolTip": "D:\\Program\\Unity\\LockStepStudy\\Server\\ServerStudy\\Server.cs",
               "RelativeToolTip": "Server.cs",
-              "ViewState": "AgIAACIBAAAAAAAAAAAQwOMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAjwIgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:34:59.544Z",
+              "WhenOpened": "2025-05-16T12:17:16.82Z",
               "EditorCaption": ""
             }
           ]

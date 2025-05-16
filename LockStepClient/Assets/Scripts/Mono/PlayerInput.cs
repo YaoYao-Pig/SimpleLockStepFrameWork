@@ -1,18 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Lockstep.Math;
 using UnityEngine;
 
+[Serializable]
 public class PlayerInput
 {
     public int id;
-    public Vector2 inputUV;
+    public LVector2 inputUV;
     public bool isJump;
     
 
     public PlayerInput()
     {
         id = GameManager.Instance.playerGuid;
-        inputUV = Vector2.zero;
+        inputUV = LVector2.zero;
         isJump = false;
     }
 }

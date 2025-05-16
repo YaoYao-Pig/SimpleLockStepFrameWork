@@ -11,7 +11,8 @@ using System.Net.Sockets;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Collections.Generic; // Required for List in GameStateSnapshot_Client
+using System.Collections.Generic;
+using Lockstep.Math; // Required for List in GameStateSnapshot_Client
 
 // 确保 SimplePollingClient 继承自 MonoBehaviour
 public class SimplePollingClient
@@ -113,6 +114,7 @@ public class SimplePollingClient
                 if (GameManager.Instance != null && GameManager.Instance.curPlayerInput != null)
                 {
                     string jsonInput = JsonUtility.ToJson(GameManager.Instance.curPlayerInput);
+                    //Debug.Log("jsonInput"+": "+ jsonInput);
                     await _writer.WriteLineAsync(jsonInput);
                     // Debug.Log($"已发送到服务器: {jsonInput}"); // 此日志可能非常频繁，按需开启
                 }
@@ -185,7 +187,7 @@ public class SimplePollingClient
                                 // Debug.Log(p.inputUV.x.ToString()+" "+p.inputUV.y.ToString());
                                 // Debug.Log("----------------");
                                 var pi = new PlayerInput();
-                                pi.inputUV = new Vector2(p.inputUV.x, p.inputUV.y);
+                                pi.inputUV = new LVector2(p.inputUV.x, p.inputUV.y);
                                 pi.isJump = p.isJump;
                                 pi.id = p.id;
                                 GameManager.Instance.playerInputDict[p.id] = pi;
@@ -275,8 +277,8 @@ public class SimplePollingClient
 [System.Serializable]
 public class Vec2_DTO_Client
 {
-    public float x;
-    public float y;
+    public int x;
+    public int y;
 
     public override string ToString()
     {

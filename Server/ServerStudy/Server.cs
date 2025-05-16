@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading; // For CancellationTokenSource & CancellationToken
 using System.Threading.Tasks;
+using Lockstep.Math;
 using Newtonsoft.Json; // 确保已通过NuGet添加 Newtonsoft.Json
 
 namespace ServerStudy {
@@ -132,6 +133,13 @@ namespace ServerStudy {
                         // Console.WriteLine($"[{clientEndPointString}] 原始消息: {line}"); // 调试时开启
                         try {
                             PlayerInput_DTO receivedInput = JsonConvert.DeserializeObject<PlayerInput_DTO>(line);
+                            //Console.WriteLine("PlayerDTO:" + receivedInput.ToString());
+                            JsonExtractor.TryExtractInputUVAsInt(line, out int inputX, out int inputY);
+                            receivedInput.inputUV.x = inputX;
+                            receivedInput.inputUV.y = inputY;
+                             //Console.WriteLine("line: " + line);
+                            
+                            //Console.WriteLine(receivedInput.inputUV.x+"   "+ receivedInput.inputUV.y);
                             if (receivedInput != null) {
                                 // 假设 ServerManager 和其 playerInputDic 存在且可访问
                                 if (ServerManager.Instance != null) {
@@ -342,18 +350,11 @@ namespace ServerStudy {
             // 此方法当前为空，可用于服务器范围内的周期性非网络任务（如果由外部循环驱动）
         }
     }
-
-    // --- DTO 类定义 ---
-    // 确保这些类在 ServerStudy 命名空间内，可以放在此文件底部或单独的文件中
-
-    // public class Vec2_DTO { ... } // (来自您之前的代码)
-    // public class PlayerInput_DTO { public int id; ... } // (来自您之前的代码，包含id)
-    // public class GameStateSnapshot { ... } // (在本回复开头已定义)
 }
 
 public class Vec2_DTO {
-    public float x { get; set; }
-    public float y { get; set; }
+    public int x { get; set; }
+    public int y { get; set; }
 
     public override string ToString() {
         return $"({x}, {y})";

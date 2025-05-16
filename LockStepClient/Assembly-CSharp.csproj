@@ -45,17 +45,42 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.55f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Controller\MoveController.cs" />
+    <Compile Include="Assets\Scripts\Math\LMathExtension2.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LFloat.cs" />
+    <Compile Include="Assets\Scripts\View\IView.cs" />
+    <Compile Include="Assets\Scripts\Collider\ColliderProxy.cs" />
+    <Compile Include="Assets\Scripts\Math\LMath_Vector.cs" />
+    <Compile Include="Assets\Scripts\Logic\Player.cs" />
     <Compile Include="Assets\Scripts\Mono\MonoBase.cs" />
     <Compile Include="Assets\Scripts\Manager\ManagerBase.cs" />
     <Compile Include="Assets\Scripts\Mono\InputMono.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LRect.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LVector3.cs" />
     <Compile Include="Assets\Scripts\Controller\IController.cs" />
+    <Compile Include="Assets\Scripts\Math\LUT\LUTAsin.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LMatrix33.cs" />
+    <Compile Include="Assets\Scripts\Math\LUT\LUTAcos.cs" />
     <Compile Include="Assets\Scripts\SimplePollingClient.cs" />
+    <Compile Include="Assets\Scripts\Collider\CTransform.cs" />
+    <Compile Include="Assets\Scripts\Math\PrimerLUT.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LAxis3D.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LQuaternion.cs" />
+    <Compile Include="Assets\Scripts\Math\LUT\LUTAtan2.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LVector3Int.cs" />
+    <Compile Include="Assets\Scripts\Math\LUT\LUTSinCos.cs" />
+    <Compile Include="Assets\Scripts\Math\LRandom.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Math\LMath.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LVector2.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LVector2Int.cs" />
     <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Controller\PlayerEntity.cs" />
+    <Compile Include="Assets\Scripts\Math\HashCodeExtension.cs" />
     <Compile Include="Assets\Scripts\Mono\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SimpleClient.cs" />
+    <Compile Include="Assets\Scripts\Math\BaseType\LAxis2D.cs" />
+    <Compile Include="Assets\Scripts\View\PlayerView.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.55f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -310,6 +335,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>D:\Program\Unity\LockStepStudy\LockStepClient\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Program\Unity\LockStepStudy\LockStepClient\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.55f1c1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
