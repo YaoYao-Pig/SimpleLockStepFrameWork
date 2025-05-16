@@ -6,7 +6,7 @@
 
 ## 已完成/已测试
 
-1. 帧同步
+1. ![帧同步](https://github.com/YaoYao-Pig/SimpleLockStepFrameWork/blob/main/video/LockStep.gif)
 2. 定点数库函数
 
 ## 已完成/测试中
