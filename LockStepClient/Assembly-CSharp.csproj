@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\SimplePollingClient.cs" />
     <Compile Include="Assets\Scripts\Collider\CTransform.cs" />
     <Compile Include="Assets\Scripts\Math\PrimerLUT.cs" />
+    <Compile Include="Assets\Scripts\Collider\CollisionManager.cs" />
     <Compile Include="Assets\Scripts\Math\BaseType\LAxis3D.cs" />
     <Compile Include="Assets\Scripts\Math\BaseType\LQuaternion.cs" />
     <Compile Include="Assets\Scripts\Math\LUT\LUTAtan2.cs" />

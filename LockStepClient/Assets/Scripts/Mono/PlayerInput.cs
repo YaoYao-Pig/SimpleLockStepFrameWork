@@ -18,4 +18,9 @@ public class PlayerInput
         inputUV = LVector2.zero;
         isJump = false;
     }
+
+    public bool isMove()
+    {
+        return inputUV != LVector2.zero;
+    }
 }

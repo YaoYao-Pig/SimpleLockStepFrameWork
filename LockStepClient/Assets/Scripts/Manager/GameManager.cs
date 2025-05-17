@@ -29,6 +29,8 @@ public class GameManager : ManagerBase
     public Dictionary<int,PlayerInput> playerInputDict = new Dictionary<int, PlayerInput>(); 
     public PlayerManager playerManager;
     private bool hasInit = false;
+    
+    public CollisionManager collisionManager;
 
     public LFloat detaTime = LMath.ToLFloat(0.02f);
     private void Awake()
@@ -40,7 +42,9 @@ public class GameManager : ManagerBase
         _playerObjectList = null;
         
         playerManager = GetComponent<PlayerManager>();
+        collisionManager = GetComponent<CollisionManager>();
         managerList.Add(playerManager);
+        managerList.Add(collisionManager);
         managerList.Add(GetComponent<EnemyManager>());
     }
 
@@ -62,7 +66,10 @@ public class GameManager : ManagerBase
                 
                 _playerObjectList.Add(t);
                 playerManager.playerMoveControllerList.Add(moveController);
-
+                    
+                
+                
+                
                 Debug.Log("PlayerCreate");
             }
 
@@ -76,22 +83,34 @@ public class GameManager : ManagerBase
                 moveController.colliderProxy.transform = new CTransform(LVector2.zero) ;
                 var playerView = t.GetComponent<PlayerView>();
                 playerView.id = p.Key;
+                moveController.playerView = playerView;
                 playerManager.PlayerId2EntitiesDic.Add(moveController.id, moveController);
+                //注册碰撞：
+                collisionManager.Register(moveController.id,moveController.colliderProxy);
+                
                 index++;
             }
             
         }
     }
-    
+    private float lastTime = 0f;
     private void Start()
     {
         simpleClient.Start();
+        lastTime = Time.time;
     }
 
     private void Update()
     {
         Initialize();
+        // if (Time.time - lastTime < sendIntervalSeconds)
+        // {
+        //     return;
+        // }
+        // lastTime = Time.time;
+        //
         inputMono.DoUpdate();
+        
         foreach (var manager in managerList)
         {
             manager.DoUpdate(sendIntervalSeconds);

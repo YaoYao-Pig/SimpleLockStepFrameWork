@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 801358741}
   - component: {fileID: 801358740}
   - component: {fileID: 801358742}
+  - component: {fileID: 801358743}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -370,11 +371,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sendIntervalSeconds: 0.1
   playerGuid: 0
+  curPlayerInput:
+    id: 0
+    inputUV:
+      _x: 0
+      _y: 0
+    isJump: 0
   inputMono: {fileID: 801358742}
   playerPrefabList:
   - {fileID: 7127470838835487289, guid: 760d56c6dbf283545a74c79649b83b12, type: 3}
   enemyList:
   - {fileID: 8486536486234664006, guid: 6d08a5fbe07c246429fbc56e1f1ada9c, type: 3}
+  playerManager: {fileID: 0}
+  collisionManager: {fileID: 0}
+  detaTime:
+    _val: 0
 --- !u!114 &801358740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoveControllerList: []
+  playerViewList: []
 --- !u!114 &801358741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +422,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89c98b8f9dd06bb45ad96349f116a892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &801358743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801358735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25367260a8dc4173ae892cb63a820bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &963194225

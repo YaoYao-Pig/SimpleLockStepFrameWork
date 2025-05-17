@@ -131,6 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58c38c7ba231049ae67659b56faae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prePos:
+    _x: 0
+    _y: 0
+  playerView: {fileID: 0}
   id: 0
 --- !u!65 &5586908654126263868
 BoxCollider:
@@ -166,6 +170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  renderer: {fileID: 4792182234875019583}
+  colliderMaterial: {fileID: 2100000, guid: 27ca123e1fb8e3c45baed5e6c0310959, type: 2}
+  defualtMaterial: {fileID: 2100000, guid: ce8d97ad71c4b3541af50b6fe979e58d, type: 2}
 --- !u!1 &8720349172768595852
 GameObject:
   m_ObjectHideFlags: 0

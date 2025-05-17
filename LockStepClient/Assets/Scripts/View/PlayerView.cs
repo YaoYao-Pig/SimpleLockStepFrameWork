@@ -6,7 +6,21 @@ public class PlayerView : IView
 {
     public int id;
     private PlayerEntity playerEntity;
+
+    public Renderer renderer;
+    public Material colliderMaterial;
+
+    public Material defualtMaterial;
     // Update is called once per frame
+    public void SetCollider()
+    {
+        renderer.material = colliderMaterial;
+    }
+
+    public void SetUnCollider()
+    {
+        renderer.material = defualtMaterial;
+    }
     void Update()
     {
         if (playerEntity == null)
@@ -16,8 +30,7 @@ public class PlayerView : IView
         }
 
         var t = GameManager.Instance.playerInputDict[id];
-        Debug.Log("pos: " + playerEntity.colliderProxy.transform.position);
-        transform.position = new Vector3(playerEntity.colliderProxy.transform.position.x/1000, 0 , playerEntity.colliderProxy.transform.position.y/1000)*Time.deltaTime;
+        transform.position = new Vector3(playerEntity.colliderProxy.transform.position.x, 0 , playerEntity.colliderProxy.transform.position.y)*Time.deltaTime;
 
     }
 }
