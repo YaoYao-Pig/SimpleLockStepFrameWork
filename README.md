@@ -8,11 +8,11 @@
 
 1. 帧同步：[演示视频](./video/LockStep.mkv)![帧同步](https://github.com/YaoYao-Pig/SimpleLockStepFrameWork/blob/main/video/LockStep.gif)
 2. 定点数库函数
+3. 定点数碰撞系统：[演示视频](./video/CollisionSystem.mkv)![定点数碰撞系统](https://github.com/YaoYao-Pig/SimpleLockStepFrameWork/blob/main/video/CollisionSystem.gif)
 
 ## 已完成/测试中
 
-1. 定点数碰撞系统
-2. 四叉树空间划分
+1. 四叉树空间划分
 
 ## 正在做/已完成设计
 
