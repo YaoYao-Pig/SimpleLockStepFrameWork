@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\Collider\ColliderProxy.cs" />
     <Compile Include="Assets\Scripts\Math\LMath_Vector.cs" />
     <Compile Include="Assets\Scripts\Logic\Player.cs" />
+    <Compile Include="Assets\Scripts\Collider\GJK\GeometryUtils.cs" />
     <Compile Include="Assets\Scripts\Mono\MonoBase.cs" />
     <Compile Include="Assets\Scripts\Manager\ManagerBase.cs" />
     <Compile Include="Assets\Scripts\Mono\InputMono.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Scripts\SimplePollingClient.cs" />
     <Compile Include="Assets\Scripts\Collider\CTransform.cs" />
     <Compile Include="Assets\Scripts\Math\PrimerLUT.cs" />
+    <Compile Include="Assets\Scripts\Collider\GJK\SupportFunction2D.cs" />
     <Compile Include="Assets\Scripts\Collider\CollisionManager.cs" />
     <Compile Include="Assets\Scripts\Math\BaseType\LAxis3D.cs" />
     <Compile Include="Assets\Scripts\Math\BaseType\LQuaternion.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerEntity.cs" />
     <Compile Include="Assets\Scripts\Math\HashCodeExtension.cs" />
+    <Compile Include="Assets\Scripts\Collider\GJK\GeometryData.cs" />
     <Compile Include="Assets\Scripts\Mono\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\SimpleClient.cs" />
     <Compile Include="Assets\Scripts\Math\BaseType\LAxis2D.cs" />
