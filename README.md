@@ -14,18 +14,17 @@
 
 1. 四叉树空间划分
 
-2. 2D-GJK:
+2. GJK+EPA:可以看我的这个可视化+实现：https://github.com/YaoYao-Pig/GJK-EPA
 
    碰撞效果：
 
    <img src="assets/image-20250519011501419.png" alt="image-20250519011501419" style="zoom:33%;" />
 
+   分离向量：
    
+   <img src="assets/image-20250519181635514.png" alt="image-20250519181635514" style="zoom:33%;" />
 
 ## 正在做/已完成设计
 
 1. 帧的预测、回滚和序列化
-
-## 学习中：
-
-GJK+EPA算法的碰撞系统升级
+1. GJK+EPA算法的碰撞系统升级
