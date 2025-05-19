@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 [Serializable]
 public class Triangle2D : SupportFunction2D
@@ -83,10 +84,18 @@ public enum Simplex2DType
 {
     None,
     Line,
-    Triangle
+    Triangle,
+    Simplex
+}
+
+public enum CollisionStatus
+{
+    GJK,
+    EPA
 }
 public class Simplex2D
 {
+    public List<Vector2> nodes;
     public Vector2 newPoint;
     public Vector2 b;
     public Vector2 c;
@@ -94,12 +103,34 @@ public class Simplex2D
     public Vector2 normal;
 
     private int count;
+    public CollisionStatus curStatus;
+    public Simplex2D()
+    {
+        nodes = new List<Vector2>();
+        nodes.Add(Vector2.zero);
+        nodes.Add(Vector2.zero);
+        nodes.Add(Vector2.zero);
+        curStatus = CollisionStatus.GJK;
+    }
+    
+    public int Count()
+    {
+        if (CollisionStatus.GJK == curStatus)
+        {
+            return count;
+        }
+        else if(CollisionStatus.EPA == curStatus)
+        {
+            return nodes.Count;
+        }
+        return 0;
+    }
 
     public Simplex2DType type
     {
         get
         {
-            switch (count)
+            switch (Count())
             {
                 case 0:
                 case 1:
@@ -109,20 +140,30 @@ public class Simplex2D
                 case 3:
                     return Simplex2DType.Triangle;
                 default:
-                    return Simplex2DType.None;
+                    return Simplex2DType.Simplex;
             }
         }
     }
     public void AppendPoint(Vector2 point)
     {
+        nodes[2]=nodes[1];
         c = b;
+        nodes[1] = nodes[0];
         b = newPoint;
+        nodes[0] = point;
         newPoint = point;
         count = Mathf.Min(count + 1 , 3);
     }
+    
+    public void AppendPointEPA(int index,Vector2 point)
+    {
+        nodes.Insert(index,point);
+    }
+    
 
     public void RemoveB()
     {
+        nodes[1] = nodes[2];
         b = c;
         count = Mathf.Max(count - 1, 0);
     }
@@ -132,8 +173,5 @@ public class Simplex2D
         count = Mathf.Max(count - 1, 0);
     }
 
-    public int Count()
-    {
-        return count;
-    }
+
 }
